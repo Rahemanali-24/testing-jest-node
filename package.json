@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest --collect-coverage"
+    "test": "jest --collect-coverage --watchAll"
   },
   "author": "",
   "license": "ISC",

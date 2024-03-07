@@ -1,6 +1,4 @@
-// models/sample-model.js
-
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const sampleSchema = new mongoose.Schema({
   name: {
@@ -13,4 +11,4 @@ const sampleSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Sample", sampleSchema);
+module.exports = mongoose.model('Sample', sampleSchema);

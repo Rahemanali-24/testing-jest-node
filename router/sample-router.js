@@ -1,9 +1,8 @@
-
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const Sample = require("../models/sample-model");
+const Sample = require('../models/sample-model');
 
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const samples = await Sample.find();
     res.json(samples);

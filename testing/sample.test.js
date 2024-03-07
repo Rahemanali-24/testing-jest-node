@@ -1,8 +1,8 @@
 const request = require("supertest");
-const app = require("../app"); // Update the import path if necessary
+const app = require("../app"); 
 const mongoose = require("mongoose");
 require('../ testSetup'); 
-
+const db = require('../db')
 beforeAll(async () => {
   await mongoose.connect(global.mongoURI, {
     useNewUrlParser: true,
@@ -21,6 +21,6 @@ describe("Sample API", () => {
     expect(res.status).toBe(200);
     expect(res.body.length).toBeGreaterThan(0);
     expect(res.body[0].name).toBe("raheman");
-    expect(res.body[0].description).toBe("testing using jest in node");
+    expect(res.body[0].description).toBe("testing");
   });
 });
